@@ -6,11 +6,23 @@
     //- Se a média for maior ou igual a 6: Aprovado
 
     //ENTRADA
+    const ptrim = Number(prompt(`Informe sua nota no 1° trimestre`))
+    const strim = Number(prompt(`Informe sua nota no 2° trimestre`))
+    const ttrim = Number(prompt(`Informe sua nota no 3° trimestre`))
 
-
-    //PROCESSAMENTO
-
-
+    //PROCESSAMENTO 
+     
+    if (((ptrim + strim + ttrim )/ 3) < 4) {
+        alert(`Você foi reprovado`)
+         }
+     else if (((ptrim + strim + ttrim) / 3) >= 4 && ((ptrim + strim + ttrim) / 3) <6) {
+        alert(`Você ficou em exame`)
+     }
+    
+    
+     else if(((ptrim + strim + ttrim) / 3) >=6) {
+        alert(`Você foi aprovado`)
+     }
     //SAÍDA
 
 </script>
